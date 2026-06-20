@@ -11,13 +11,7 @@ function esmayordeedad($edad) {
     }
 }
 $edades=[12, 25, 17, 30, 15];
-foreach ($edades as $edad) {
-if ($edad >= 18) {
-    echo "<p>La persona con edad: $edad - " . esmayordeedad($edad) . "</p>";
-}
-else {
-    echo "<p>La persona con edad: $edad - " . " es menor de edad" . "</p>";
-}}
+
 // 
 // Array de productos sin IVA
 $inventario = [
@@ -37,4 +31,11 @@ foreach ($inventario as $nombre => $precio) {
         echo "<p>$nombre: $precioFinal (Económico)</p>";
     }
 }
+foreach ($edades as $edad) {
+if ($edad >= 18) {
+    echo "<p>La persona con edad: $edad - " . esmayordeedad($edad) . "</p>";
+}
+else {
+    echo "<p>La persona con edad: $edad - " . " es menor de edad" . "</p>";
+}}
 ?>
