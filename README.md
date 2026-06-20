@@ -68,3 +68,6 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 ![localhost](capturas/productos.png)
 ## tuve un error con lo de mayor de edad. tenia que poner es mayor de edad, no "eres mayor de edad"
 ![localhost](capturas/funciones.png)
+
+### 7. formularios
+![localhost](capturas/formulario.png)
