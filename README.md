@@ -66,3 +66,4 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 ![localhost](capturas/presentacionpersonal.png)
 ### 6. arrays
 ![localhost](capturas/productos.png)
+![localhost](capturas/funciones.png)
