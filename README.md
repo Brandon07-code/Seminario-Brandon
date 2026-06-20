@@ -64,3 +64,5 @@ Base de datos: conectarse desde phpMyAdmin o desde su código PHP usando:
 ### 5. capturasindex
 Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:9090/
 ![localhost](capturas/presentacionpersonal.png)
+### 6. arrays
+![localhost](capturas/productos.png)
