@@ -31,6 +31,7 @@ foreach ($inventario as $nombre => $precio) {
         echo "<p>$nombre: $precioFinal (Económico)</p>";
     }
 }
+echo "<h2>Validacion de mayoria de edad</h2>";
 foreach ($edades as $edad) {
 if ($edad >= 18) {
     echo "<p>La persona con edad: $edad - " . esmayordeedad($edad) . "</p>";
