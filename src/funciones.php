@@ -12,7 +12,7 @@ function esmayordeedad($edad) {
 }
 $edades=[12, 25, 17, 30, 15];
 foreach ($edades as $edad) {
-if ($edad >= esmayordeedad($edad)) {
+if ($edad >= 18) {
     echo "<p>La persona con edad: $edad - " . esmayordeedad($edad) . "</p>";
 }
 else {
