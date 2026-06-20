@@ -71,3 +71,6 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 
 ### 7. formularios
 ![localhost](capturas/formulario.png)
+
+### 8. POO
+![localhost](capturas/CatalogoPOO.png)
