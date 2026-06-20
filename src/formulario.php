@@ -6,7 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// Validación básica
 	if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['telefono'])) {
 		$nombre_mostrado = htmlspecialchars($_POST['nombre']);
-		$mensaje = "Bienvenido, $nombre_mostrado!";
+		$telefono = htmlspecialchars($_POST['telefono']);
+$email = htmlspecialchars($_POST['email']);
+        $mensaje = "Bienvenido, $nombre_mostrado!";
 	} else {
 		$mensaje = "Todos los campos son obligatorios.";
 	}
