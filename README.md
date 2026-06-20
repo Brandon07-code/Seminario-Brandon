@@ -56,3 +56,8 @@ Base de datos: conectarse desde phpMyAdmin o desde su código PHP usando:
    Contraseña: root_password (o dev_password)
    Base de datos: seminario_db
 ```
+
+
+![localhost](capturas/compose.png)
+![localhost](capturas/myadmin.png)
+![localhost](capturas/phpinfo.png)
