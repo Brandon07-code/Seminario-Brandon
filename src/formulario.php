@@ -27,7 +27,9 @@ $email = htmlspecialchars($_POST['email']);
 	<form method="POST" action="">
 		<label>Nombre: <input type="text" name="nombre"></label><br><br>
 		<label>Email: <input type="email" name="email"></label><br><br>
-		<label>Teléfono: <input type="number" name="telefono" title="Solo dígitos"></label><br><br>
+        <h2>Solo se aceptan números en el campo de teléfono</h2>
+		<label>Teléfono: <input type="number" name="telefono"></label><br><br>
+		
         <button type="submit">Enviar</button>
 	</form>
 	
