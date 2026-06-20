@@ -4,7 +4,7 @@ $nombre_mostrado = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// Validación básica
-	if (!empty($_POST['nombre']) && !empty($_POST['email']) && !ctype_digit($_POST['telefono'])) {
+	if (!empty($_POST['nombre']) && !empty($_POST['email']) && !ctype_digit($_POST['telefono']) && !empty($_POST['telefono'])) {
 		$nombre_mostrado = htmlspecialchars($_POST['nombre']);
 		$telefono = htmlspecialchars($_POST['telefono']);
 $email = htmlspecialchars($_POST['email']);
@@ -27,10 +27,10 @@ $email = htmlspecialchars($_POST['email']);
 	<form method="POST" action="">
 		<label>Nombre: <input type="text" name="nombre"></label><br><br>
 		<label>Email: <input type="email" name="email"></label><br><br>
-		<label>Teléfono: <input type="number" name="telefono"></label><br><br>
-		<button type="submit">Enviar</button>
+		<label>Teléfono: <input type="number" name="telefono" title="Solo dígitos"></label><br><br>
+        <button type="submit">Enviar</button>
 	</form>
-	<p><strong>Comparativa:</strong> Prueba cambiando <code>method="GET"</code> y observa la URL.</p>
+	
 </body>
 </html>
 
