@@ -61,3 +61,4 @@ Base de datos: conectarse desde phpMyAdmin o desde su código PHP usando:
 ![localhost](capturas/compose.png)
 ![localhost](capturas/myadmin.png)
 ![localhost](capturas/phpinfo.png)
+![localhost](capturas/presentacionpersonal.png)
