@@ -9,7 +9,7 @@ services:
     container_name: seminario_php
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "9090:80"
     volumes:
       - ./src:/var/www/html
     networks:
@@ -20,7 +20,7 @@ services:
   # Servicio de base de datos (MariaDB/MySQL)
   db:
     image: mariadb:10.8
-    container_name: seminario_mariadb
+    container_name: seminario_brandon
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root_password
