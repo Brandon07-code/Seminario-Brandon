@@ -69,8 +69,8 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 ## tuve un error con lo de mayor de edad. tenia que poner es mayor de edad, no "eres mayor de edad"
 ![localhost](capturas/funciones.png)
 
-### 7. formularios
+### 7. formularios php+html
 ![localhost](capturas/formulario.png)
 
-### 8. POO
+### 8. POO (introduccion)
 ![localhost](capturas/CatalogoPOO.png)
