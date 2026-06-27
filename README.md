@@ -74,3 +74,8 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 
 ### 8. POO (introduccion)
 ![localhost](capturas/CatalogoPOO.png)
+
+### 9. Databases
+## Creacion de un usuario para verificar que conecte a la bd correctamente
+ ![localhost](capturas/usuariocreadoendb.png)
+ ![localhost](capturas/prueba-verusuariospdo.png)
