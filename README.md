@@ -79,3 +79,9 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 ## Creacion de un usuario para verificar que conecte a la bd correctamente, el error se debe a que ya el usuario que esta en el codigo se creo y no se puede crear nuevamente
  ![localhost](capturas/usuariocreadoendb.png)
  ![localhost](capturas/prueba-verusuariospdo.png)
+
+ ### 10. finalizacion de formulario crud de la guia dos
+ ![localhost](capturas/formulario.png)
+ ![localhost](capturas/accioncrear.png)
+  ![localhost](capturas/accioneditar.png)
+   ![localhost](capturas/mensajedecreacionexitosa.png)
