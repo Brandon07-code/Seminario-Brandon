@@ -7,6 +7,9 @@
 </head>
 <body class="container mt-4">
     <h1>Usuarios Registrados</h1>
+    <?php if (isset($_GET['success']) && $_GET['success'] == '1'): ?>
+        <div class="alert alert-success">Usuario creado exitosamente</div>
+    <?php endif; ?>
     <a href="index.php?action=create" class="btn btn-primary mb-3">+ Crear Nuevo</a>
     <table class="table table-striped">
         <thead>

@@ -23,7 +23,7 @@ class UserController {
             $email = $_POST['email'];
             $this->model->create($nombre, $email);
             // Redirigir al listado para evitar reenvío del formulario
-            header('Location: index.php?action=index');
+            header('Location: index.php?action=index&success=1');
             exit;
         } else {
             
