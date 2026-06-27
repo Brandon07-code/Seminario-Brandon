@@ -1,19 +1,22 @@
 <?php
-require_once 'POO/producto.php';
+// Este archivo es el punto de entrada (Front Controller)
+require_once 'controllers/UserController.php';
 
-// Instanciar (crear objetos)
+$controller = new UserController();
 
-$prod1 = new Producto("Laptop Gamer", 1500);
-$prod2 = new Producto("Mouse Inalámbrico", 80);
-$prod3 = new Producto("Monitor 4K", 1200, 0.19); // IVA personalizado
-$prod4 = new Producto("fuente de poder", 100, 0.19, "Electronica");
-$prod5 = new Producto("escritorio", 200, 0.19, "Oficina");
-echo "<h2>Catálogo POO</h2>";
-echo "<ul>";
-echo "<li>" . $prod1->getInfo() . "</li>";
-echo "<li>" . $prod2->getInfo() . "</li>";
-echo "<li>" . $prod3->getInfo() . "</li>";
-echo "<li>" . $prod4->getInfo() . "</li>";
-echo "<li>" . $prod5->getInfo() . "</li>";
-echo "</ul>";
+// Leer la acción desde la URL. Si no viene, por defecto 'index'
+$action = $_GET['action'] ?? 'index';
+
+// Enrutamiento básico (manual)
+if ($action === 'index') {
+	$controller->index();
+} elseif ($action === 'create') {
+	$controller->create();
+} elseif ($action === 'edit') {
+	$controller->edit();
+} elseif ($action === 'delete') {
+	$controller->delete();
+} else {
+	echo "Página no encontrada";
+}
 

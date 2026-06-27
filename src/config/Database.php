@@ -5,7 +5,7 @@ class Database {
 
     // Constructor privado para que nadie pueda hacer 'new Database()' desde fuera
     private function __construct() {
-        // ¡OJO! El host es 'db' porque así se llama el servicio en docker-compose.yml
+        
         $dsn = "mysql:host=db;dbname=seminario_db;charset=utf8mb4";
         $user = 'root';
         $password = 'root_password';

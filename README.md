@@ -76,6 +76,6 @@ Abrir el navegador e ingresar al local host con puerto 90:90 http://localhost:90
 ![localhost](capturas/CatalogoPOO.png)
 
 ### 9. Databases
-## Creacion de un usuario para verificar que conecte a la bd correctamente
+## Creacion de un usuario para verificar que conecte a la bd correctamente, el error se debe a que ya el usuario que esta en el codigo se creo y no se puede crear nuevamente
  ![localhost](capturas/usuariocreadoendb.png)
  ![localhost](capturas/prueba-verusuariospdo.png)

@@ -43,6 +43,17 @@ public function create($nombre, $email) {
         }
     }
 
+    // Actualizar un usuario por id
+    public function update($id, $nombre, $email) {
+        try {
+            $stmt = $this->db->prepare("UPDATE users SET nombre = :nombre, email = :email WHERE id = :id");
+            return $stmt->execute([':nombre' => $nombre, ':email' => $email, ':id' => $id]);
+        } catch (PDOException $e) {
+            echo "Error al ejecutar la consulta: " . htmlspecialchars($e->getMessage());
+            return null;
+        }
+    }
+
 public function delete($id) {
         try {
             $stmt = $this->db->prepare("DELETE FROM users WHERE id = ?");

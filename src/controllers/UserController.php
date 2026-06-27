@@ -26,7 +26,7 @@ class UserController {
             header('Location: index.php?action=index');
             exit;
         } else {
-            // Mostrar formulario
+            
             require_once __DIR__ . '/../views/users/create.php';
         }
     }
@@ -39,5 +39,23 @@ class UserController {
             exit;
         }
     }
+
+
+    public function edit() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $id = $_POST['id'];
+            $nombre = $_POST['nombre'];
+            $email = $_POST['email'];
+            $this->model->update($id, $nombre, $email);
+            header('Location: index.php?action=index');
+            exit;
+        } else {
+            if (isset($_GET['id'])) {
+                $user = $this->model->getById($_GET['id']);
+                require_once __DIR__ . '/../views/users/edit.php';
+            }
+        }
+    }
+
 }
 ?>
